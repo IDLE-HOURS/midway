@@ -12,6 +12,7 @@ export const Cart = () => {
   const openCheckout = useCheckout()
   const toggleCart = useToggleCart()
   const { total } = useCartTotals()
+  console.log(lineItems)
   return (
     <div>
       {lineItems.length > 0 ? (

@@ -4,6 +4,7 @@ import sanityClient from '@sanity/client'
 import { statusReturn } from "./requestConfig";
 import crypto from 'crypto'
 import _ from 'lodash'
+import fetch from 'node-fetch'
 
 const {
   SANITY_API_TOKEN,

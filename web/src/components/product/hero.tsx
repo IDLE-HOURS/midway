@@ -6,7 +6,7 @@ import { Serializer } from "src/utils/serializer"
 import { Image } from 'src/components/image'
 import { ProductForm } from './form'
 
-export const ProductHero = ({ product, main: { title, productDescription, linkedSite, linkedSiteName, mainImage }}: {
+export const ProductHero = ({ product, main: { title, slug, productDescription, linkedSite, linkedSiteName, mainImage }}: {
   main: {
     title?: string
     subTitle?: string
@@ -41,7 +41,7 @@ export const ProductHero = ({ product, main: { title, productDescription, linked
                 Shop the real product on the <a href={linkedSite} className='cw underline' target='_blank'>{linkedSiteName}</a> Website.
               </div>
             )}
-            <ProductForm {...product} showQuantity={true} />
+            <ProductForm {...product} slug={slug} showQuantity={true} />
           </div>
         </div>
       </div>
